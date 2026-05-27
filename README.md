@@ -6,6 +6,14 @@ El objetivo principal es evaluar cómo los choques en el tipo de cambio nominal 
 
 ---
 
+# Serie histórica de la TRM
+
+Evolución del tipo de cambio nominal COP/USD durante el período de análisis.
+
+![TRM](results/trm.png)
+
+---
+
 # Objetivo del estudio
 
 Analizar la magnitud y velocidad del traspaso cambiario hacia los precios domésticos en Colombia durante el período 2005-2025.
@@ -46,7 +54,7 @@ El análisis se realiza mediante un modelo VAR (Vector Autoregressive Model) est
 
 Se realizaron pruebas KPSS para verificar la integración de orden uno de las series.
 
-![KPSS](results/kpss_test.png)
+![KPSS](results/kpss.png)
 
 ---
 
@@ -54,15 +62,13 @@ Se realizaron pruebas KPSS para verificar la integración de orden uno de las se
 
 La longitud óptima del VAR se seleccionó mediante criterios de información y validación econométrica.
 
-![Lag Selection](results/lag_selection.png)
-
 ---
 
 ## Estabilidad dinámica del VAR
 
 Se verificó que todas las raíces inversas del polinomio característico se ubicaran dentro del círculo unitario.
 
-![VAR Stability](results/stability_var.png)
+![VAR Stability](results/pol.png)
 
 ---
 
@@ -70,7 +76,7 @@ Se verificó que todas las raíces inversas del polinomio característico se ubi
 
 Se evaluó la independencia serial de los residuos del modelo.
 
-![LM Test](results/lm_test.png)
+![LM Test](results/correlacion.png)
 
 ---
 
@@ -78,7 +84,7 @@ Se evaluó la independencia serial de los residuos del modelo.
 
 Se aplicó la prueba de Lütkepohl / Jarque-Bera multivariante.
 
-![Normality](results/normality_test.png)
+![Normality](results/normalidad.png)
 
 ---
 
@@ -86,7 +92,7 @@ Se aplicó la prueba de Lütkepohl / Jarque-Bera multivariante.
 
 Se analizaron las relaciones dinámicas entre tipo de cambio y niveles de precios.
 
-![Granger](results/granger_test.png)
+![Granger](results/granger.png)
 
 ---
 
@@ -96,19 +102,23 @@ Las IRF acumuladas permiten observar cómo un shock positivo en el tipo de cambi
 
 ## Respuesta de precios de importación
 
-![IRF Importaciones](results/irf_imports.png)
+![IRF Importaciones](results/imp.png)
 
 ---
 
 ## Respuesta de precios al productor
 
-![IRF IPP](results/irf_ipp.png)
+![IRF IPP](results/ipp.png)
 
 ---
 
 ## Respuesta de precios al consumidor
 
-![IRF IPC](results/irf_ipc.png)
+![IRF IPC](results/ipc.png)
+
+![Shock](results/shock.png)
+
+![Desviación estándar](results/sd.png)
 
 ---
 
@@ -119,7 +129,6 @@ Los resultados muestran un traspaso cambiario:
 - Alto hacia precios de importación
 - Moderado hacia precios al productor
 - Bajo hacia precios al consumidor
-
 
 ---
 
