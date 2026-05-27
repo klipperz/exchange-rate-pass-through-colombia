@@ -135,7 +135,8 @@ Los resultados muestran un traspaso cambiario:
 # Software utilizado
 
 - EViews
-
+# Fuente de los datos
+- Banco de la república
 # Referencias
 
 - Rowland, P. (2003). *Exchange rate pass-through to domestic prices: The case of Colombia.*
