@@ -32,6 +32,9 @@ Se incluyen:
 - Índice de precios de importación
 - Índice de precios al productor (IPP)
 - Índice de precios al consumidor (IPC)
+## Fuente de los datos
+
+-Banco de la república
 
 ## Resultados principales
 
